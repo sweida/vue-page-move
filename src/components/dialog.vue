@@ -10,7 +10,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import CubePage from 'page.vue'
+  import CubePage from './page.vue'
 
   export default {
     components: {
