@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import button from '@/components/button'
 import icon from '@/components/icon'
 import dialog from '@/components/dialog'
+import input from '@/components/input'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/dialog',
       name: 'dialog',
       component: dialog
+    },
+    {
+      path: '/input',
+      name: 'input',
+      component: input
     }
   ]
 })
