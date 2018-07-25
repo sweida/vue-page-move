@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+// import NotFound from '../404'
 // import HelloWorld from '@/components/HelloWorld'
 import button from '@/components/button'
 import icon from '@/components/icon'
@@ -11,9 +12,8 @@ Vue.use(Router)
 export default new Router({
   routes: [
     // {
-    //   path: '/',
-    //   name: 'HelloWorld',
-    //   component: HelloWorld
+    //   path: '*',
+    //   component: NotFound
     // },
     {
       path: '/button',

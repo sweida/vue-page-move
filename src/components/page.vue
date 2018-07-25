@@ -1,42 +1,39 @@
 <template>
-  <div class="cube-page" :class="type">
-    <header class="header">
-      <h1>{{title}}这个标题啊</h1>
-      <i @click="back" class="cubeic-back"></i>
-    </header>
-    <div class="wrapper">
-      <section v-show="desc" class="desc"><slot name="desc">{{desc}}</slot></section>
-      <main class="content">
-        <slot name="content">{{content}}</slot>
-      </main>
-    </div>
+<div class="cube-page" :class="type">
+  <header class="header">
+    <h1>{{title}}</h1>
+    <i @click="back" class="cubeic-back"></i>
+  </header>
+  <div class="wrapper">
+    <section v-show="desc" class="desc">
+      <slot name="desc">{{desc}}</slot>
+    </section>
+    <main class="content">
+      <slot name="content">{{content}}</slot>
+    </main>
   </div>
+</div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      props: {
-        title: {
-          type: String,
-          default: '',
-          required: true
-        },
-        type: {
-          type: String,
-          default: ''
-        },
-        desc: {
-          type: String,
-          default: ''
-        },
-        content: {
-          type: String,
-          default: ''
-        }
-
-      }
+  props: {
+    title: {
+      type: String,
+      default: '',
+      required: true
+    },
+    type: {
+      type: String,
+      default: ''
+    },
+    desc: {
+      type: String,
+      default: ''
+    },
+    content: {
+      type: String,
+      default: ''
     }
   },
   methods: {

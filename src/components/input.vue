@@ -1,6 +1,6 @@
 <template>
 
-  <cube-page type="button-view" title="Button">
+  <cube-page title="Input">
     <div slot="content">
       <cube-input
         :type="type"
